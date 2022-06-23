@@ -1,0 +1,238 @@
+:root {
+    --txtColorMain: #47FF63;
+    --txtColorAdd: #8EFA9F;
+    --txtColorHover: #8efa9e5d;
+    --txtColorOrange: #F16C62;
+    --txtColorOrangeHover: #f16c62ba;
+    --bgMain: #fdf0d97e;
+    --bgAdd: #fdf0d95f;
+    --bgCardOne: #ebe3d72c;
+    --cardBorder: #8efa9e81 ;
+    --animationPulseStart: #8efa9ea9;
+    --animationPulseEnd: #8efa9e18;
+}
+
+
+@media screen and (max-width: 1998px) {
+
+    .headerMenu__btn {
+        font-size: 28px;
+    }
+
+    .headerMenu__btnWrapper {
+        font-size: 28px;
+    }
+
+    .cardBottom__description {
+        font-size: 28px;
+    }
+
+    .contactMenu {
+        right: 1%;
+        bottom: 40%;
+    }
+}
+
+@media screen and (max-width: 1800px) {
+
+    .headerMenu__btn {
+        font-size: 26px;
+    }
+
+    .headerMenu__btnWrapper {
+        font-size: 26px;
+    }
+
+    .cardBottom__description {
+        font-size: 26px;
+    }
+
+    .contactMenu {
+        right: 1%;
+        bottom: 40%;
+    }
+}
+
+@media screen and (max-width: 1700px) {
+
+
+    .headerMenu__btn {
+        font-size: 24px;
+    }
+
+    .headerMenu__btnWrapper {
+        font-size: 24px;
+    }
+
+    .cardBottom__description {
+        font-size: 24px;
+    }
+
+    .contactMenu {
+        right: 3%;
+        bottom: 40%;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+
+    .headerMenu__btn {
+        font-size: 22px;
+    }
+
+    .headerMenu__btnWrapper {
+        font-size: 22px;
+    }
+
+    .cardBottom__description {
+        font-size: 22px;
+    }
+
+    .contactMenu {
+        right: 3%;
+        bottom: 40%;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+
+
+    .headerMenu__btn {
+        font-size: 22px;
+    }
+
+    .headerMenu__btnWrapper {
+        font-size: 22px;
+    }
+
+    .cardBottom__description {
+        font-size: 22px;
+    }
+
+    .contactMenu {
+        right: 2%;
+        bottom: 50%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .contactMenu {
+        right: 1%;
+        bottom: 48%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .contactMenu {
+        right: 8%;
+        bottom: 40%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .contactMenu {
+        right: 8%;
+        bottom: 40%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .contactMenu {
+        right: 8%;
+        bottom: 40%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .contactMenu {
+        right: 3%;
+        bottom: 40%;
+    }
+
+    .cardBottom__buyBtn {
+        font-size: smaller;
+        padding: 5px;
+    }
+}
+
+
+@media screen and (max-width: 815px) {
+   .cardBottom {
+    padding: 5px;
+   }
+
+   .contactMenu {
+    right: 3%;
+    bottom: 50%;
+}
+
+.contentCards {
+    flex-direction: column;
+   }
+
+   .telegramContact {
+    bottom: 8%;
+   }
+}
+
+@media screen and (max-width: 615px) {
+    .cardBottom {
+     padding: 5px;
+    }
+
+    .socMedias__img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .telegramContact__string {
+        font-size: 8px;
+       }
+ }
+
+ @media screen and (max-width: 600px) {
+   .contentCards {
+    flex-direction: column;
+   }
+
+   .headerMenu__btn {
+    font-size: 14px;
+   }
+
+   .socMedias__img {
+    width: 20px;
+    height: 20px;
+   }
+
+   .footer {
+    font-size: 10px;
+   }
+
+   .telegramContact {
+    bottom: 6%;
+   }
+   
+ }
+
+ @media screen and (max-width: 450px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .headerMenu {
+        font-size: 14px;
+    }
+  }
+
+@media screen and (max-width: 280px) {
+
+    .headerMenu {
+        flex-direction: column;    
+}
+  }
+ 
+
+
+
+
+

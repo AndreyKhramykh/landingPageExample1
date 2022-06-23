@@ -1,0 +1,330 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --txtColorMain: #47FF63;
+    --txtColorAdd: #8EFA9F;
+    --txtColorHover: #8efa9e5d;
+    --txtColorOrange: #F16C62;
+    --txtColorOrangeHover: #f16c62ba;
+    --bgMain: #fdf0d97e;
+    --bgAdd: #fdf0d95f;
+    --bgCardOne: #ebe3d72c;
+    --cardBorder: #8efa9e81 ;
+    --animationPulseStart: #8efa9ea9;
+    --animationPulseEnd: #8efa9e18;
+}
+
+.wrapper {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    // height: 100%;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 10%;
+    color: var(--txtColorMain);
+    background-color: var(--bgMain);
+
+}
+.headerLogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+
+		&__img {
+            width: 100px;
+            height: 100px;
+		}
+}
+
+.headerLogo p {
+    text-align: center;
+    white-space: nowrap;
+}
+
+.headerMenu {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+
+
+        &__btnWrapper {
+            position: relative;
+
+            &:hover .headerMenu__list {
+                display: flex;
+            }
+        }
+
+		&__btn {
+            padding: 10px;
+            white-space: nowrap;
+            cursor: pointer;
+            font-size: 22px;
+
+            &:hover {
+                background-color: var(--txtColorHover);
+            }
+
+			&_home {
+                color: var(--txtColorOrange);
+			}
+		}
+
+        &__list {
+            display: none;
+            flex-direction: column;
+            background-color: var(--txtColorAdd);
+            position: absolute;
+            white-space: nowrap;
+            z-index: 99;
+
+            &:last-child {
+                border-bottom: 1px solid var(--txtColorOrange);
+            }
+        }
+
+        &__listPoint {
+            color: var(--txtColorOrange);
+            padding: 10px;
+            border: 1px solid var(--txtColorOrange);
+            cursor: pointer;
+
+            &:hover {
+                background-color: var(--txtColorMain);
+            }
+        }
+}
+.content {
+    background-color: var(--bgAdd);
+}
+.contentCards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 10%;
+
+
+		&__card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 4px solid var(--cardBorder);
+            border-radius: 10%;
+            margin: 20px;
+		}
+}
+.cardTop {
+    padding: 10px;
+
+    &__img {
+        width: 100px;
+        height: 100px;
+    }
+}
+.cardBottom {
+    padding: 10px;
+    text-align: center;
+    background-color: var(--bgCardOne);
+
+		&__h1 {
+            color: var(--txtColorOrange);
+            padding: 10px;
+
+		}
+
+		&__description {
+            color: var(--txtColorMain);
+            font-size: 18px;
+
+		}
+
+		&__buyMenu {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10%;
+		}
+
+		&__price {
+            color: var(--txtColorOrange);
+            font-size: 24px;
+            font-weight: bold;
+		}
+
+		&__buyBtn {
+            color: var(--txtColorOrange);
+            background-color: var(--txtColorMain);
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10%;
+            font-size: 20px;
+            font-weight: bold;
+            box-shadow: 4px 4px 6px var(--txtColorOrange);
+
+            &:hover {
+                color: var(--txtColorOrangeHover);
+                box-shadow: 4px 4px 2px var(--txtColorOrange);
+
+            }
+
+
+		}
+}
+.footer {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 5%;
+    color: var(--txtColorMain);
+    background-color: var(--bgMain);
+
+
+
+		&__dev {
+            width: 30%;
+		}
+
+		&__socMedias {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 30%;
+		}
+
+		&__contacts {
+            width: 30%;
+            text-align: right;
+		}
+}
+.socMedias {
+    &__img {
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+    }
+
+
+}
+
+.telegramContact {
+    position: absolute;
+    left: 55%;
+    bottom: 15%;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: var(--animationPulseStart);
+    border-radius: 8%;
+    color: var(--txtColorOrange);
+
+    &__string {
+        padding: 10px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    &__copyImg {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+}
+
+.telegramContact__show {
+    display: flex;
+}
+
+.phone {
+
+    position: fixed;
+    bottom: 30%;
+    right: 3%;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: var(--animationPulseStart);
+    animation: pulse 1s infinite;
+    display: none;
+    cursor: pointer;
+
+    &__img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+.contactMenu {
+    position: fixed;
+    bottom: 50%;
+    right: 1%;
+    z-index: 1;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: var(--txtColorMain);
+    width: 14%;
+    background-color: var(--animationPulseEnd);
+    padding: 5px;
+    border-radius: 10%;
+
+    &__block {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+    }
+
+    &__txt {
+        padding: 10px;
+    }
+
+    &__numbers {
+        padding: 10px;
+    }
+}
+
+.contactMenu__show {
+    display: flex;
+}
+
+.contactMenu a {
+    text-decoration: none;
+    color: var(--txtColorMain);
+}
+
+.contactMenu__block img {
+    width: 40px;
+    height: 40px;
+}
+
+
+@keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0px var(--animationPulseStart);
+    }
+    100% {
+      box-shadow: 0 0 0 40px var(--animationPulseEnd);
+    }
+  }
+
